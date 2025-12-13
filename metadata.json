@@ -1,0 +1,5 @@
+{
+  "name": "Healing Chicken Soup",
+  "description": "A relaxing interactive web app simulating oil droplets on chicken soup. Merge droplets to relax, shake to scatter.",
+  "requestFramePermissions": []
+}
