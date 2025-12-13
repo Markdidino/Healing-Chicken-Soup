@@ -1,20 +1,10 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Healing Chicken Soup (療育雞湯)
 
-# Run and deploy your AI Studio app
+Healing Chicken Soup is now deployed on Vercel at:
+https://healing-chicken-soup.vercel.app
 
-This contains everything you need to run your app locally.
+療育雞湯目前已經發佈到 Vercel，網址是：
+https://healing-chicken-soup.vercel.app
 
-View your app in AI Studio: https://ai.studio/apps/drive/1meGP3mXenM6WqZIai2CAlG1MzNiFm6pH
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## About
+A relaxing interactive web app simulating oil droplets on chicken soup. Merge droplets to relax, stir to scatter.
