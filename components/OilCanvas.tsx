@@ -260,8 +260,6 @@ const OilCanvas: React.FC<OilCanvasProps> = ({ isPlaying, language }) => {
     }
 
     // Determine if hint should be shown
-    // Show if: Giant droplet exists OR (more than 1 droplet exists AND none are close) OR (only 1 droplet exists)
-    // Actually simpler: Show if giant OR NO droplets are close (if 0 or 1 droplet, loop above doesn't set areAnyClose to true, so !areAnyClose covers it)
     const shouldShow = hasGiantDroplet || !areAnyClose;
     if (shouldShow !== showHint) {
         setShowHint(shouldShow);
@@ -368,7 +366,7 @@ const OilCanvas: React.FC<OilCanvasProps> = ({ isPlaying, language }) => {
       <canvas ref={canvasRef} className="block w-full h-full cursor-pointer" />
       {/* Spoon Reset Button and Hint */}
       {showHint && isPlaying && (
-        <div className="absolute bottom-10 right-10 flex items-center gap-4 transition-opacity duration-500 z-10">
+        <div className="absolute top-4 right-4 flex flex-row-reverse items-center gap-4 transition-opacity duration-500 z-10">
            <button 
              onClick={handleStir}
              className="p-3 bg-white/40 hover:bg-white/70 backdrop-blur-md rounded-full shadow-lg transition-all text-amber-900 group"
